@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Prism.js (Optional for code snippets) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#intro">_hello</a>
+    <a href="#about">_about</a>
+    <a href="#skills">_skills</a>
+    <a href="#projects">_projects</a>
+    <a href="#blog">_blog</a>
+    <a href="#contact">_contact</a>
+  </nav>
+  <section id="intro">
+    <img src="profile1.png" alt="Profile Photo" class="profile-photo">
+    <div class="terminal-line">
+      <span id="typed"></span>
+    </div>
+  </section>
+  <section id="about" data-aos="fade-up">
+    <pre class="comment">
+// about me
+/* I am a passionate developer who crafts clean, functional, and futuristic web applications. 
+Available just for you (❁´◡`❁) */
+    </pre>
+  </section>
+  <section id="skills" data-aos="fade-up">
+    <pre class="comment">// skills</pre>
+    <div class="progress-box">
+      <span>HTML</span>
+      <div class="progress">
+        <div style="width:90%"></div>
+      </div>
+      <span>CSS</span>
+      <div class="progress">
+        <div style="width:85%"></div>
+      </div>
+      <span>JavaScript</span>
+      <div class="progress">
+        <div style="width:80%"></div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" data-aos="fade-up">
+    <pre class="comment">// projects</pre>
+    <div class="project">
+      <code class="language-js">// Portfolio Website</code>
+      <p>A terminal-themed responsive portfolio</p>
+      <a href="https://github.com/" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <code class="language-js">// Weather CLI App</code>
+      <p>Command-line app for weather updates</p>
+      <a href="https://github.com/" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+  <section id="blog" data-aos="fade-up">
+    <pre class="comment">// blog posts</pre>
+    <ul>
+      <li>Understanding JavaScript Closures</li>
+      <li>Dark Mode Web Design – Why Developers Love It</li>
+    </ul>
+  </section>
+  <section id="contact" data-aos="fade-up">
+    <pre class="comment">// contact me</pre>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="4" placeholder="Message..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+   <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script>
+    AOS.init();
+    const typed = new Typed('#typed', {
+      strings: [
+        'zohaib@portfolio:~$ Hello World_',
+        'zohaib@portfolio:~$ I am a futuristic developer_',
+        'zohaib@portfolio:~$ Let\'s build something amazing_'
+      ],
+      typeSpeed: 45,
+      backSpeed: 25,
+      backDelay: 1500,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
